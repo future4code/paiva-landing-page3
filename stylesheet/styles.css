@@ -1,92 +1,21 @@
-.imagem-pizza {
-    background-image: url("/img/pizza.jpg");
-    /* background-color: #cccccc; */
-    background-size: cover;
-    background-position: center center;
-    /* position: relative; */
-    /* border: 0px; */
-    width: 100%;
-    height: 100%;
-    /* transition: background-image 0.2s ease-in-out 0s; */
-    /* padding-top: 50%; */
-    opacity: 0.4;
-    height: 100vh;
-    /* background-position: center; */
-    background-repeat: no-repeat;
-    /* background-size:contain; */
-    /* position: relative; */
+/* Estilos Gerais */
 
+html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li, a, main{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
 }
-
-.container-principal {
-    text-align: center;
-    /* align-items: center;
-        justify-items: center; */
-    position: absolute;
-    top: 50vh;
-    left: 50vw;
-    transform: translate(-50%, -50%);
-    color: #51260e;
-}
-
-.text-superior p {
-    font-family: "Gotham A", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    color: #653f2a;
-    font-size: 1.5rem;
-}
-
-.text-superior h1 {
-    font-family: "Gotham A", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    font-size: 3rem;
-    padding-top: 1rem;
-    margin-bottom: 2rem;
-    /* line-height: normal; */
-    /* width: 100%; */
-
-}
-
-.text-inferior p {
-    font-family: "Gotham A", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    color: #653f2a;
-    font-size: 1.5rem;
-}
-
-.container-img img {
-    width: 100%;
-}
-
-.container-img {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 16px;
-    margin-bottom: 20px;
-    justify-items: center;
-}
-
-
-
-
-@media screen and (max-device-width:800px) {
-
-
-    .container-img {
-        display: flex;
-        flex-direction: column;
-        /* column-gap: 16px;
-        margin-bottom: 20px; */
-        justify-items: center;
-    }
-}
-
-
 
 body {
-    height: 100vh;
     width: 100vw;
-    background-color: white;
+    height: 100vh;
 }
 
 /* Header */
+
 header {
     width: 100%;
     background-color: white;
@@ -157,15 +86,148 @@ header {
     color: white;
 }
 
+/* Body */
 
-/* test*/
-
-main {
+.imagem-pizza {
+    background-image: url("/img/pizza.jpg");
+    /* background-color: #cccccc; */
+    background-size: cover;
+    background-position: center center;
+    /* position: relative; */
+    /* border: 0px; */
+    width: 100%;
     height: 100%;
+    /* transition: background-image 0.2s ease-in-out 0s; */
+    /* padding-top: 50%; */
+    opacity: 0.4;
+    height: 100vh;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    /* background-size:contain; */
+    /* position: relative; */
+
 }
 
+.container-principal {
+    text-align: center;
+    /* align-items: center;
+        justify-items: center; */
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    color: #51260e;
+}
 
-/*Footer*/
+.text-superior p {
+    font-family: "Gotham A", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    color: #653f2a;
+    font-size: 1.5rem;
+}
+
+.text-superior h1 {
+    font-family: "Gotham A", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 3rem;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+    /* line-height: normal; */
+    /* width: 100%; */
+
+}
+
+.text-inferior p {
+    font-family: "Gotham A", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    color: #653f2a;
+    font-size: 1.5rem;
+}
+
+.container-img img {
+    width: 100%;
+}
+
+.container-img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 16px;
+    margin-bottom: 20px;
+    justify-items: center;
+}
+
+.fonte-adr {
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 1;
+    font-weight: bold;
+    font-family: 'Varela Round', sans-serif;
+    grid-column: 1 / -1;
+    padding: 20px;
+}
+
+.fonte-adr h2:nth-child(2) {
+    color: rgb(135, 61, 235);
+}
+
+.fonte-adr p {
+    display: flex;
+    font-weight: bold;
+    margin-top: 50px;
+    justify-content: center;
+
+}
+
+.container-adr {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    max-width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.container-adr section {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.bloco-adr {
+    grid-column: 1;
+}
+
+.section-adr {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background: rgb(245, 246, 250);
+    border-radius: 20px;
+    max-width: 370px;
+    padding-bottom: 40px;
+}
+
+.section-adr div:nth-child(1) {
+    border-radius: 20%;
+}
+
+.section-adr span {
+    font-size: 1rem;
+    line-height: 1;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    margin: 2px 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.section-adr div img {
+    width: 90%;
+    margin: 1.5em auto;
+    display: block;
+    border-bottom: 1px solid rgb(139, 139, 139);
+}
+
+/* Footer */
 
 footer {
     background-color: pink;
@@ -269,6 +331,21 @@ footer {
     opacity: 80%;
 }
 
+/* Media Quarrys */
+
+@media screen and (max-device-width:800px) {
+
+
+    .container-img {
+        display: flex;
+        flex-direction: column;
+        /* column-gap: 16px;
+        margin-bottom: 20px; */
+        justify-items: center;
+    }
+}
+
+
 @media screen and (min-device-width: 320px) and (max-device-width: 600px) {
     * {
         margin: 0;
@@ -306,3 +383,5 @@ footer {
         justify-content: flex-end;
     }
 }
+
+
