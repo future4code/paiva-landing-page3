@@ -84,6 +84,114 @@ header{
 }
 
 
+/* test*/
+
+main{
+    height: 100%;
+}
+
+
+/*Footer*/
+
+footer{
+    background-color: pink;
+    height: 300px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding:50px 100px 0 100px;
+}
+
+.redes-sociais h2{
+    color: gray;
+    padding: 10px;
+    font-size: 150%;
+}
+.icones-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 40px;
+    margin-top: 30px;
+}
+
+.icones{
+    height: 30px;
+    width: 30px;
+    opacity: 50%;
+}
+
+.atendimento h2{
+    color: gray;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 150%;
+}
+
+.atendimento h3{
+    color: black;
+    padding-left: 10px;
+    font-size: 100%;
+}
+
+.atendimento p{
+    padding-left: 10px;
+    padding-top: 5px;
+    text-decoration: underline;
+}
+
+.parceiro h2{
+    color: gray;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 150%;
+}
+
+.parceiro p{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.parceiro a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color:rgb(179, 39, 40);
+    margin-left: 10px;
+    margin-top: 20px;
+    padding:10px 20px 20px 10px;
+    border-radius: 4%;
+    color: white;
+    letter-spacing: .09rem;
+    opacity: 1;
+}
+
+.parceiro a:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color:rgb(179, 39, 40);
+    margin-left: 10px;
+    margin-top: 20px;
+    padding:10px 20px 20px 10px;
+    border-radius: 4%;
+    color: white;
+    letter-spacing: .09rem;
+    opacity: 80%;
+}
+
 
 
 
