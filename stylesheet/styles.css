@@ -1,0 +1,95 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+.imagem-pizza{
+    background-image: url("/img/pizza.jpg");
+    /* background-color: #cccccc; */
+    background-size: cover;
+    background-position: center center;
+    /* position: relative; */
+    /* border: 0px; */
+    width: 100%;
+    height: 100%;
+    /* transition: background-image 0.2s ease-in-out 0s; */
+    /* padding-top: 50%; */
+    opacity: 0.4;
+    height: 100vh;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    /* background-size:contain; */
+    /* position: relative; */
+
+}
+.container-principal{
+        text-align: center;
+        /* align-items: center;
+        justify-items: center; */
+        position: absolute;
+        top: 50vh;
+        left: 50vw;
+        transform: translate(-50%, -50%);
+        color:#51260e;
+}
+
+.text-superior p{
+    font-family: "Gotham A", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    color: #653f2a;
+    font-size: 1.5rem;
+}
+
+.text-superior h1{
+    font-family: "Gotham A", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 3rem;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+    /* line-height: normal; */
+    /* width: 100%; */
+
+}
+
+.text-inferior p{
+    font-family: "Gotham A", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    color: #653f2a;
+    font-size: 1.5rem;
+}
+
+.container-img img{
+    width: 100%;
+}
+
+.container-img{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 16px;
+    margin-bottom: 20px;
+    justify-items: center;
+}
+
+
+
+
+@media  screen and (max-device-width:800px) {
+   
+   
+    .container-img{
+        display: flex;
+        flex-direction: column;
+        /* column-gap: 16px;
+        margin-bottom: 20px; */
+        justify-items: center;
+    }
+ 
+
+
+    
+}
+
+
+
+
+
+
+
+
