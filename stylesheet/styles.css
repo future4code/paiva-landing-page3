@@ -1,17 +1,93 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.imagem-pizza {
+    background-image: url("/img/pizza.jpg");
+    /* background-color: #cccccc; */
+    background-size: cover;
+    background-position: center center;
+    /* position: relative; */
+    /* border: 0px; */
+    width: 100%;
+    height: 100%;
+    /* transition: background-image 0.2s ease-in-out 0s; */
+    /* padding-top: 50%; */
+    opacity: 0.4;
+    height: 100vh;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    /* background-size:contain; */
+    /* position: relative; */
+
 }
 
-body{
+.container-principal {
+    text-align: center;
+    /* align-items: center;
+        justify-items: center; */
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    color: #51260e;
+}
+
+.text-superior p {
+    font-family: "Gotham A", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    color: #653f2a;
+    font-size: 1.5rem;
+}
+
+.text-superior h1 {
+    font-family: "Gotham A", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 3rem;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+    /* line-height: normal; */
+    /* width: 100%; */
+
+}
+
+.text-inferior p {
+    font-family: "Gotham A", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    color: #653f2a;
+    font-size: 1.5rem;
+}
+
+.container-img img {
+    width: 100%;
+}
+
+.container-img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 16px;
+    margin-bottom: 20px;
+    justify-items: center;
+}
+
+
+
+
+@media screen and (max-device-width:800px) {
+
+
+    .container-img {
+        display: flex;
+        flex-direction: column;
+        /* column-gap: 16px;
+        margin-bottom: 20px; */
+        justify-items: center;
+    }
+}
+
+
+
+body {
     height: 100vh;
     width: 100vw;
     background-color: white;
 }
 
 /* Header */
-header{
+header {
     width: 100%;
     background-color: white;
     position: sticky;
@@ -20,51 +96,51 @@ header{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    border-bottom: 2px solid whitesmoke ;
+    border-bottom: 2px solid whitesmoke;
 }
 
-.logo-top{
+.logo-top {
     width: 16%;
 }
 
-.header-esquerda> a{
+.header-esquerda>a {
     text-decoration: none;
     color: rgb(179, 39, 40);
     padding: 0 6%;
     font-size: 80%;
     font-family: sans-serif;
-    font-weight:1000;
+    font-weight: 1000;
     letter-spacing: 0.06rem;
     opacity: 1;
 }
 
-.header-esquerda> a:hover{
+.header-esquerda>a:hover {
     text-decoration: none;
     color: rgb(179, 39, 40);
     padding: 0 6%;
     font-size: 80%;
     font-family: sans-serif;
-    font-weight:1000;
+    font-weight: 1000;
     letter-spacing: 0.06rem;
     opacity: 70%;
 }
 
 
-.header-esquerda{
+.header-esquerda {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-.header-direita{
+.header-direita {
     display: flex;
     justify-content: flex-end;
 }
 
-.header-direita a{
+.header-direita a {
     font-size: 80%;
     font-weight: 1000;
-    font-family:sans-serif;
+    font-family: sans-serif;
     background-color: white;
     padding: 10px;
     border: 1px solid black;
@@ -73,7 +149,7 @@ header{
     color: rgb(179, 39, 40);
 }
 
-.header-direita a:hover{
+.header-direita a:hover {
     background-color: rgb(179, 39, 40);
     padding: 10px;
     border: 1px solid black;
@@ -84,35 +160,37 @@ header{
 
 /* test*/
 
-main{
+main {
     height: 100%;
 }
 
 
 /*Footer*/
 
-footer{
+footer {
     background-color: pink;
     height: 300px;
 }
-.footer{
+
+.footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    padding:50px 100px 0 100px;
+    padding: 50px 100px 0 100px;
 }
 
-.redes-sociais h2{
+.redes-sociais h2 {
     color: gray;
     padding: 10px;
     font-size: 150%;
 }
-.icones-container{
+
+.icones-container {
     display: flex;
     flex-direction: row;
 }
 
-.circle{
+.circle {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -124,114 +202,107 @@ footer{
     margin-top: 30px;
 }
 
-.icones{
+.icones {
     height: 30px;
     width: 30px;
     opacity: 50%;
 }
 
-.atendimento h2{
+.atendimento h2 {
     color: gray;
     padding: 10px;
     font-weight: bolder;
     font-size: 150%;
 }
 
-.atendimento h3{
+.atendimento h3 {
     color: black;
     padding-left: 10px;
     font-size: 100%;
 }
 
-.atendimento p{
+.atendimento p {
     padding-left: 10px;
     padding-top: 5px;
     text-decoration: underline;
 }
 
-.parceiro h2{
+.parceiro h2 {
     color: gray;
     padding: 10px;
     font-weight: bolder;
     font-size: 150%;
 }
 
-.parceiro p{
+.parceiro p {
     padding: 10px;
     margin-bottom: 10px;
 }
-.parceiro a{
+
+.parceiro a {
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    background-color:rgb(179, 39, 40);
+    background-color: rgb(179, 39, 40);
     margin-left: 10px;
     margin-top: 20px;
-    padding:10px 20px 20px 10px;
+    padding: 10px 20px 20px 10px;
     border-radius: 4%;
     color: white;
     letter-spacing: .09rem;
     opacity: 1;
 }
 
-.parceiro a:hover{
+.parceiro a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    background-color:rgb(179, 39, 40);
+    background-color: rgb(179, 39, 40);
     margin-left: 10px;
     margin-top: 20px;
-    padding:10px 20px 20px 10px;
+    padding: 10px 20px 20px 10px;
     border-radius: 4%;
     color: white;
     letter-spacing: .09rem;
     opacity: 80%;
 }
 
-@media screen and (min-device-width: 320px) and (max-device-width: 600px)
-
-{
-    *{
+@media screen and (min-device-width: 320px) and (max-device-width: 600px) {
+    * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
-    
+
     /* Header */
-    header{
+    header {
         width: 100%;
         background-color: white;
-        display:flex;
+        display: flex;
         justify-content: space-between;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
-        border-bottom: 2px solid whitesmoke ;
+        border-bottom: 2px solid whitesmoke;
     }
-    
-    .header-esquerda{
+
+    .header-esquerda {
         width: 30%;
     }
 
-    .header-esquerda img{   
-        height:60px;
+    .header-esquerda img {
+        height: 60px;
         width: 60px;
     }
 
-    .header-esquerda a{
+    .header-esquerda a {
         display: none;
     }
 
-    .header-direita{
-       width: 70%;
-       display: flex;
-       justify-content: flex-end;
+    .header-direita {
+        width: 70%;
+        display: flex;
+        justify-content: flex-end;
     }
 }
-
-
-
-
-
-
