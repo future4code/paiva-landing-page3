@@ -420,7 +420,7 @@ footer {
 
 /* Media Quarrys */
 
-@media screen and (max-device-width: 600px) {
+@media only screen and (min-device-width : 320px) and (max-device-width: 420px) {
 
     /* Header */
 
@@ -550,7 +550,7 @@ footer {
     }
 
     .text-superior h1 {
-        margin-top: 30px;
+        margin-top: 35px;
     }
 
     .text-inferior {
@@ -558,15 +558,33 @@ footer {
     }
 
 
-
 }
+
 /* Galaxy S5 */
 
 
 @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
-    .redes-sociais .icones-container{
-      display: flex;
-      justify-content: space-between;
-      margin: 0 10%;
+    .redes-sociais .icones-container {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 10%;
     }
 }
+
+/* Ipad */
+
+@media only screen and (max-width : 768px) and (max-height : 1024px) {
+    /* .container-img {
+        display: flex;
+        flex-direction: row;
+        max-width: 80%;
+        flex-wrap: wrap;
+        justify-items: center;
+    }
+    .container-img figure {
+        max-width: 200px;
+        max-height: 150px;
+        flex-grow: 1;
+    } */
+}
+
