@@ -445,6 +445,25 @@ footer {
     text-decoration: underline;
 }
 
+.container-adr {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 3fr);
+}
+
+
+.fonte-adr {
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.1;
+    font-weight: bold;
+    margin-top: 10px;
+    font-family: 'Varela Round', sans-serif;
+    grid-column: 1 / -1;
+    padding: 10px;
+}
+
+
 }
 
 
