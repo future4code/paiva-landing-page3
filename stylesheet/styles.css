@@ -18,7 +18,7 @@ body {
 
 header {
     width: 100%;
-    background-color: white;
+    background: white!important;
     position: sticky;
     top: 0;
     display: flex;
@@ -26,7 +26,11 @@ header {
     justify-content: space-around;
     align-items: center;
     border-bottom: 2px solid whitesmoke;
+    opacity: 1!important;
+    z-index: 9;
 }
+
+
 
 .logo-top {
     width: 16%;
