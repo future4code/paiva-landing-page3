@@ -1,6 +1,23 @@
 /* Estilos Gerais */
 
-html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li, a, main{
+html,
+body,
+figure,
+img,
+div,
+input,
+textarea,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+a,
+main {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,7 +26,7 @@ html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li
     font-family: 'Times New Roman', Times, serif;
 }
 
-body {
+body, html {
     width: 100vw;
     height: 100vh;
 }
@@ -18,7 +35,7 @@ body {
 
 header {
     width: 100%;
-    background: white!important;
+    background: white !important;
     position: sticky;
     top: 0;
     display: flex;
@@ -26,7 +43,7 @@ header {
     justify-content: space-around;
     align-items: center;
     border-bottom: 2px solid whitesmoke;
-    opacity: 1!important;
+    opacity: 1 !important;
     z-index: 9;
 }
 
@@ -92,9 +109,14 @@ header {
 
 /* Body */
 
-.imagem-pizza{
+main {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.imagem-pizza {
     background-image: url("/img/pizza.jpg");
-   
+
     background-size: cover;
     background-position: center center;
     position: relative;
@@ -105,33 +127,33 @@ header {
     background-repeat: no-repeat;
 }
 
-.container-principal{
-        display: grid;
-        justify-items: center;
-        text-align: center;
-        position: absolute;
-        top: 50vh;
-        left: 50vw;
-        transform: translate(-50%, -50%);
-        color:#51260e;
+.container-principal {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    color: #51260e;
 }
 
-.text-superior p{
+.text-superior p {
     font-family: "Gotham A", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     color: #653f2a;
     font-size: 1.3rem;
 }
 
-.text-superior h1{
+.text-superior h1 {
     font-family: "Gotham A", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     font-size: 2rem;
     padding-top: 1rem;
     margin-bottom: 1rem;
-    
+
 
 }
 
-.text-inferior p{
+.text-inferior p {
     font-family: "Gotham A", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     color: #653f2a;
     font-size: 1.5rem;
@@ -139,77 +161,85 @@ header {
     display: inline;
 }
 
-.container-img{
+.container-img {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 1%;
     row-gap: 1%;
     margin-bottom: 4%;
     justify-items: center;
-    
+
 }
 
-figure{
+figure {
     display: grid;
     width: 250px;
-    height: 150px; 
+    height: 150px;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.imgdoce{
+.imgdoce {
     background-image: url("/img/doces.png");
 }
-.imgdoce:hover{
+
+.imgdoce:hover {
     background-image: url("/img/doce.jpg");
 }
 
-.imgmilkshake{
-    background-image: url("/img/bebidas.png");  
+.imgmilkshake {
+    background-image: url("/img/bebidas.png");
 }
-.imgmilkshake:hover{
+
+.imgmilkshake:hover {
     background-image: url("/img/milkshake.jpg");
 }
 
-.imgsanduiche{
-    background-image: url("/img/massas.png");  
+.imgsanduiche {
+    background-image: url("/img/massas.png");
 }
-.imgsanduiche:hover{
+
+.imgsanduiche:hover {
     background-image: url("/img/sanduiche.jpg");
 }
 
-.imgshells{
-    background-image: url("/img/arabe.png"); 
+.imgshells {
+    background-image: url("/img/arabe.png");
 }
-.imgshells:hover{
+
+.imgshells:hover {
     background-image: url("/img/shells.jpg");
 }
 
-.imgsushi{
+.imgsushi {
     background-image: url("/img/japonesa.png");
 }
-.imgsushi:hover{
+
+.imgsushi:hover {
     background-image: url("/img/sushi.jpg");
 }
 
-.imgacai{
-    background-image: url("/img/gelato.png");  
+.imgacai {
+    background-image: url("/img/gelato.png");
 }
-.imgacai:hover{
+
+.imgacai:hover {
     background-image: url("/img/acai.jpg");
 }
 
-.imgbetel-leaf{
-    background-image: url("/img/tailandesa.png");  
+.imgbetel-leaf {
+    background-image: url("/img/tailandesa.png");
 }
-.imgbetel-leaf:hover{
+
+.imgbetel-leaf:hover {
     background-image: url("/img/betel-leaf.jpg");
 }
 
-.imgcarne{
+.imgcarne {
     background-image: url("/img/carnes.png");
 }
-.imgcarne:hover{
+
+.imgcarne:hover {
     background-image: url("/img/carne.jpg");
 }
 
@@ -397,84 +427,8 @@ footer {
 
 @media screen and (min-device-width: 320px) and (max-device-width: 600px) {
 
-
-    .container-img {
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-    }
-
-    figure{
-        display: grid;
-        width: 250px;
-        height: 40px; 
-        margin-bottom: 1%;
-        background-repeat: no-repeat;
-        background-position: center;
-        
-    }
-
-    .container-principal{
-        text-align: center;
-        /* align-items: center;
-        justify-items: center; */
-        position: absolute;
-        top: 50vh;
-        left: 50vw;
-        transform: translate(-50%, -50%);
-        color:#51260e;
-}
-
-.text-superior p{
-    padding-top: 10rem;
-    font-size: 1.1rem;
-}
-
-.text-superior h1{
-    font-size: 1.5rem;
-    
-    margin-bottom: 1rem;
-}
-
-.text-inferior p{
-    font-size: 1.2rem;
-    padding-top: 0.5rem;
-    display: block;
-}
-.subl{
-    text-decoration: underline;
-}
-
-.container-adr {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 3fr);
-}
-
-
-.fonte-adr {
-    font-weight: bold;
-    font-size: 1rem;
-    text-align: center;
-    line-height: 1.1;
-    font-weight: bold;
-    margin-top: 10px;
-    font-family: 'Varela Round', sans-serif;
-    grid-column: 1 / -1;
-    padding: 10px;
-}
-
-
-}
-
-
-@media screen and (min-device-width: 320px) and (max-device-width: 600px) {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
     /* Header */
+
     header {
         width: 100%;
         height: 10%;
@@ -503,6 +457,74 @@ footer {
         display: none;
     }
 
+    /* body */
+
+    .container-img {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    figure {
+        display: grid;
+        width: 250px;
+        height: 40px;
+        margin-bottom: 1%;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    .container-principal {
+        text-align: center;
+        /* align-items: center;
+        justify-items: center; */
+        position: absolute;
+        top: 50vh;
+        left: 50vw;
+        transform: translate(-50%, -50%);
+        color: #51260e;
+    }
+
+    .text-superior p {
+        padding-top: 10rem;
+        font-size: 1.1rem;
+    }
+
+    .text-superior h1 {
+        font-size: 1.5rem;
+
+        margin-bottom: 1rem;
+    }
+
+    .text-inferior p {
+        font-size: 1.2rem;
+        padding-top: 0.5rem;
+        display: block;
+    }
+
+    .subl {
+        text-decoration: underline;
+    }
+
+    .container-adr {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 3fr);
+        margin: 0 auto;
+        width: 95%;
+    }
+
+    .fonte-adr {
+        font-weight: bold;
+        font-size: 1rem;
+        text-align: center;
+        line-height: 1.1;
+        font-weight: bold;
+        margin-top: 10px;
+        font-family: 'Varela Round', sans-serif;
+        grid-column: 1 / -1;
+        padding: 10px;
+    }
 
     /* FOOTER */
 
@@ -510,16 +532,11 @@ footer {
         background-color: pink;
         height: 100%;
     }
-    
+
     .footer {
         display: grid;
-        grid-template-columns:1fr;
-        grid-template-rows: 1fr 1fr  1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
         padding: 25px 50px 0 10px;
     }
-
-    
-
 }
-
-
