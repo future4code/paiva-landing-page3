@@ -88,7 +88,7 @@ header {
 
 /* Body */
 
-.imagem-pizza {
+.imagem-pizza{
     background-image: url("/img/pizza.jpg");
     /* background-color: #cccccc; */
     background-size: cover;
@@ -107,27 +107,26 @@ header {
     /* position: relative; */
 
 }
-
-.container-principal {
-    text-align: center;
-    /* align-items: center;
+.container-principal{
+        text-align: center;
+        /* align-items: center;
         justify-items: center; */
-    position: absolute;
-    top: 50vh;
-    left: 50vw;
-    transform: translate(-50%, -50%);
-    color: #51260e;
+        position: absolute;
+        top: 50vh;
+        left: 50vw;
+        transform: translate(-50%, -50%);
+        color:#51260e;
 }
 
-.text-superior p {
+.text-superior p{
     font-family: "Gotham A", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     color: #653f2a;
     font-size: 1.5rem;
 }
 
-.text-superior h1 {
+.text-superior h1{
     font-family: "Gotham A", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    font-size: 3rem;
+    font-size: 2.5rem;
     padding-top: 1rem;
     margin-bottom: 2rem;
     /* line-height: normal; */
@@ -135,22 +134,99 @@ header {
 
 }
 
-.text-inferior p {
+.text-inferior p{
     font-family: "Gotham A", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     color: #653f2a;
     font-size: 1.5rem;
+    padding-top: 3rem;
 }
 
-.container-img img {
+.container-img img{
     width: 100%;
 }
 
-.container-img {
+.container-img{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 16px;
-    margin-bottom: 20px;
+    width: 50vw;
+    height: 30vh;
+    column-gap: 1%;
+    margin-bottom: 2%;
     justify-items: center;
+   
+}
+
+
+
+figure,figure img{
+    display: grid;
+    width: 11vw;
+    height: 15vh; 
+    column-gap: 1%;
+    margin-bottom: 2%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+}
+
+.imgdoce{
+    background-image: url("/img/doces.png");
+    
+}
+.imgdoce:hover{
+    background-image: url("/img/doce.jpg");
+}
+
+.imgmilkshake{
+    background-image: url("/img/bebidas.png");
+    
+}
+.imgmilkshake:hover{
+    background-image: url("/img/milkshake.jpg");
+}
+.imgsanduiche{
+    background-image: url("/img/massas.png");
+    
+}
+.imgsanduiche:hover{
+    background-image: url("/img/sanduiche.jpg");
+}
+.imgshells{
+    background-image: url("/img/arabe.png");
+    
+}
+.imgshells:hover{
+    background-image: url("/img/shells.jpg");
+}
+.imgsushi{
+    background-image: url("/img/japonesa.png");
+    
+}
+.imgsushi:hover{
+    background-image: url("/img/sushi.jpg");
+}
+.imgacai{
+    background-image: url("/img/gelato.png");
+    
+}
+.imgacai:hover{
+    background-image: url("/img/acai.jpg");
+}
+
+.imgbetel-leaf{
+    background-image: url("/img/tailandesa.png");
+    
+}
+.imgbetel-leaf:hover{
+    background-image: url("/img/betel-leaf.jpg");
+}
+
+.imgcarne{
+    background-image: url("/img/carnes.png");
+    
+}
+.imgcarne:hover{
+    background-image: url("/img/carne.jpg");
 }
 
 .fonte-adr {
