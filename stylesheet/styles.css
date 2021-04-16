@@ -270,6 +270,7 @@ figure {
     grid-template-rows: 250px 1fr;
     height: 100%;
     margin: 0 auto;
+    max-width: 1280px;
 }
 
 .container-adr section {
@@ -419,7 +420,7 @@ footer {
 
 /* Media Quarrys */
 
-@media screen and (min-device-width: 320px) and (max-device-width: 600px) {
+@media screen and (max-device-width: 600px) {
 
     /* Header */
 
@@ -538,5 +539,34 @@ footer {
         grid-template-rows: repeat(3, 1fr);
         padding: 25px 50px 0 10px;
         margin: 0 auto;
+    }
+}
+
+/* Iphone 5s/SE */
+
+@media only screen and (max-device-width: 480px) {
+    .footer {
+        padding: 0;
+    }
+
+    .text-superior h1 {
+        margin-top: 30px;
+    }
+
+    .text-inferior {
+        margin-top: 20px;
+    }
+
+
+
+}
+/* Galaxy S5 */
+
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+    .redes-sociais .icones-container{
+      display: flex;
+      justify-content: space-between;
+      margin: 0 10%;
     }
 }
